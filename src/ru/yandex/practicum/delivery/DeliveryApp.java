@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class DeliveryApp {
+public class тестDeliveryApp {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static List<Parcel> allParcels = new ArrayList<>();
