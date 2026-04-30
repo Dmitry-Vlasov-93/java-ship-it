@@ -1,9 +1,7 @@
 package ru.yandex.practicum.delivery;
 
 public abstract class Parcel {
-    static protected final int PRICE_FOR_STANDARD = 2;
-    static protected final int PRICE_FOR_FRAGILE = 4;
-    static protected final int PRICE_FOR_PERISHABLE = 3;
+
     protected String description;
     protected int weight;
     protected String deliveryAddress;
@@ -24,9 +22,8 @@ public abstract class Parcel {
         System.out.println("Посылка " + description + " доставлена по адресу " + deliveryAddress);
     }
 
-    public int getPrice() {
-        return PRICE_FOR_STANDARD;
-    }
+    protected abstract int  getPrice();
+
 
     public int calculateDeliveryCost() {
         return weight * getPrice();
