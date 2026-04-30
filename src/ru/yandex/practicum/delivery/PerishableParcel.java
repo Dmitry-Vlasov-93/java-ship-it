@@ -10,11 +10,11 @@ public class PerishableParcel extends Parcel {
     }
 
     @Override
-    public int getPrice() {
+    protected int getPrice() {
         return PRICE_FOR_PERISHABLE;
     }
 
-    protected boolean isExpired(int currentDay) {
+    public boolean isExpired(int currentDay) {
         return sendDay + timeToLive < currentDay;
     }
 
