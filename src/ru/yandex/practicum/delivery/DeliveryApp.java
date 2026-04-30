@@ -219,7 +219,7 @@ public class DeliveryApp {
         } else if (command == 3) {
             int counter = 1;
             ArrayList<ParcelBox<? extends Parcel>> allPerishableBox = allBox.get("Perishable");
-            System.out.println("Количество коробок со скоропортящимися посылками" + allPerishableBox.size());
+            System.out.println("Количество коробок со скоропортящимися посылками " + allPerishableBox.size());
             for (ParcelBox<? extends Parcel> box : allPerishableBox) {
                 System.out.println("Все посылки в коробке номер: " + counter);
                 for (Parcel parcel : box.getAllParcels()) {

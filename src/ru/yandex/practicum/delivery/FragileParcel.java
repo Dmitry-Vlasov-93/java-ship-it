@@ -13,7 +13,7 @@ public class FragileParcel extends Parcel implements Trackable {
     }
 
     @Override
-    public int getPrice() {
+    protected int getPrice() {
         return PRICE_FOR_FRAGILE;
     }
 
